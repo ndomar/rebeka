@@ -1,4 +1,4 @@
-rebeka
+Rebeka
 ======
 
 Simple Ruby - Weka wrapper
