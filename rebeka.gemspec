@@ -1,5 +1,6 @@
 Gem::Specification.new do |s|
   s.add_dependency  'rjb' 
+  s.add_dependency  'rspec'
   s.name            = 'rebeka'
   s.date            = '2012-04-16'
   s.summary         = "Simple Ruby Weka Wrapper"
