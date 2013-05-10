@@ -5,9 +5,10 @@ require 'rjb'
 ## the function takes in some trained model, exports it to .model file
 class Rebeka
 	##TODO fix directory of weka.jar
-	dir = "/weka.jar"
+	dir = "D:/rebeka/lib/weka.jar"
 	Rjb::load(dir, jvmargs=["-Xmx1000M"])
 	puts dir
+	puts Dir.pwd
 	def to_model classifier, name
 		Rjb::import("weka.core.SerializationHelper").write(name + ".model", classifier)
 	end
