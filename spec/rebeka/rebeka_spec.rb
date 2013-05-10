@@ -9,7 +9,7 @@ describe "Rebeka main specs" do
 	end
 
 	let(:csv_loader) do
-		Rjb::load("C:/weka.jar", jvmargs=["-Xmx1000M"])
+		Rjb::load("/lib/weka.jar", jvmargs=["-Xmx1000M"])
 		loader = Rjb::import("weka.core.converters.CSVLoader").new
 		file = Rjb::import("java.io.File").new("electronics_final.csv")
 		loader.setFile(file)
